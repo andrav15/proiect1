@@ -21,7 +21,7 @@ def validare_cnp(CNP):
     s=sum(int(CNP[i]) * v_ultima_cifra[i] for i in range(len(v_ultima_cifra)))
     x=s%11
     if x == 10:
-        x = 1
+        x=1
     else:
         x=x
     return x == int(CNP[-1])
